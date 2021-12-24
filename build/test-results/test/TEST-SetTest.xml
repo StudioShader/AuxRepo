@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SetTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-24T22:31:31" hostname="bruh-HP-ENVY-x360-Convertible-15-bp1xx" time="16.461">
+  <properties/>
+  <testcase name="runModuleCheckerTest" classname="SetTest" time="16.461">
+    <failure message="java.lang.IllegalStateException: Invalid exception as a result of add(1)" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Invalid exception as a result of add(1)
+	at org.jetbrains.kotlinx.lincheck.UtilsKt.executeActor(Utils.kt:69)
+	at org.jetbrains.kotlinx.lincheck.runner.ParallelThreadsRunner.run(ParallelThreadsRunner.kt:290)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.ManagedStrategy.runInvocation(ManagedStrategy.kt:241)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.modelchecking.ModelCheckingStrategy.runImpl(ModelCheckingStrategy.kt:74)
+	at org.jetbrains.kotlinx.lincheck.strategy.managed.ManagedStrategy.run(ManagedStrategy.kt:136)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.run(LinChecker.kt:145)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.tryMinimize(LinChecker.kt:134)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.tryMinimize(LinChecker.kt:109)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.minimize(LinChecker.kt:100)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.checkImpl(LinChecker.kt:82)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.checkImpl$lincheck(LinChecker.kt:59)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.check(LinChecker.kt:49)
+	at org.jetbrains.kotlinx.lincheck.LinChecker$Companion.check(LinChecker.kt:210)
+	at org.jetbrains.kotlinx.lincheck.LinChecker.check(LinChecker.kt)
+	at SetTest.runModuleCheckerTest(SetTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jetbrains.kotlinx.lincheck.UtilsKt.executeActor(Utils.kt:61)
+	... 61 more
+Caused by: java.lang.NullPointerException
+	at SetImpl.get_by_key(SetImpl.java:67)
+	at SetImpl.add(SetImpl.java:33)
+	at SetTest.add(SetTest.java:24)
+	... 66 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+= Iteration 1 / 10 =
+Execution scenario (init part):
+[add(1), iterator(), remove(2)]
+Execution scenario (parallel part):
+| isEmpty()   | add(2)      |
+| iterator()  | contains(3) |
+| contains(3) | remove(3)   |
+| remove(3)   | isEmpty()   |
+| isEmpty()   | iterator()  |
+Execution scenario (post part):
+[isEmpty(), add(1), remove(1)]
+
+= Iteration 2 / 10 =
+Execution scenario (init part):
+[remove(3), add(3), contains(3)]
+Execution scenario (parallel part):
+| add(3)     | iterator() |
+| iterator() | remove(2)  |
+| isEmpty()  | isEmpty()  |
+| add(3)     | iterator() |
+| isEmpty()  | isEmpty()  |
+Execution scenario (post part):
+[iterator(), add(3), add(2)]
+
+= Iteration 3 / 10 =
+Execution scenario (init part):
+[isEmpty(), isEmpty(), isEmpty()]
+Execution scenario (parallel part):
+| isEmpty()  | add(1)     |
+| iterator() | iterator() |
+| add(3)     | add(3)     |
+| add(2)     | add(1)     |
+| add(3)     | iterator() |
+Execution scenario (post part):
+[contains(3), remove(3), contains(2)]
+
+= Iteration 4 / 10 =
+Execution scenario (init part):
+[isEmpty(), isEmpty(), remove(1)]
+Execution scenario (parallel part):
+| isEmpty()   | contains(2) |
+| contains(1) | isEmpty()   |
+| contains(3) | iterator()  |
+| isEmpty()   | iterator()  |
+| isEmpty()   | isEmpty()   |
+Execution scenario (post part):
+[iterator(), add(3), iterator()]
+
+= Iteration 5 / 10 =
+Execution scenario (init part):
+[iterator(), isEmpty(), contains(3)]
+Execution scenario (parallel part):
+| iterator()  | iterator()  |
+| iterator()  | iterator()  |
+| isEmpty()   | isEmpty()   |
+| contains(3) | contains(3) |
+| add(3)      | isEmpty()   |
+Execution scenario (post part):
+[isEmpty(), add(3), add(1)]
+
+= Iteration 6 / 10 =
+Execution scenario (init part):
+[isEmpty(), iterator(), isEmpty()]
+Execution scenario (parallel part):
+| remove(3)   | add(2)      |
+| isEmpty()   | remove(1)   |
+| iterator()  | contains(3) |
+| contains(2) | iterator()  |
+| add(3)      | iterator()  |
+Execution scenario (post part):
+[remove(3), contains(2), iterator()]
+
+= Iteration 7 / 10 =
+Execution scenario (init part):
+[isEmpty(), isEmpty(), add(1)]
+Execution scenario (parallel part):
+| contains(2) | contains(2) |
+| add(2)      | remove(1)   |
+| iterator()  | isEmpty()   |
+| isEmpty()   | contains(2) |
+| isEmpty()   | iterator()  |
+Execution scenario (post part):
+[iterator(), add(1), add(3)]
+
+Invalid interleaving found, trying to minimize the scenario below:
+Execution scenario (init part):
+[isEmpty(), isEmpty(), add(1)]
+Execution scenario (parallel part):
+| contains(2) | contains(2) |
+| add(2)      | remove(1)   |
+| iterator()  | isEmpty()   |
+| isEmpty()   | contains(2) |
+| isEmpty()   | iterator()  |
+Execution scenario (post part):
+[iterator(), add(1), add(3)]
+]]></system-out>
+  <system-err><![CDATA[To make verification faster, you can specify the state equivalence relation on your sequential specification.
+At the current moment, `SetTest` does not specify it, or the equivalence relation implementation is incorrect.
+To fix this, please implement `equals()` and `hashCode()` functions on `SetTest`; the simplest way is to extend `VerifierState`
+and override the `extractState()` function, which is called at once and the result of which is used for further `equals()` and `hashCode()` invocations.
+]]></system-err>
+</testsuite>
